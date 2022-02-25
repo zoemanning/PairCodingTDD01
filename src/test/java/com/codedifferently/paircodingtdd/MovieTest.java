@@ -7,9 +7,9 @@ public class MovieTest {
 
     @Test
     public void constructorTest01(){
-        Movie movie = new Movie("Home Alone",RatingEnum.R);
+        Movie movie = new Movie("Home Alone",RatingEnum.R,4.5);
 
-        String expected = "Movie: Home Alone rated R";
+        String expected = "Movie: Home Alone rated R ranking 4.5";
         String actual = movie.toString();
 
         Assertions.assertEquals(expected,actual);

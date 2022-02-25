@@ -3,10 +3,12 @@ package com.codedifferently.paircodingtdd;
 public class Movie {
     private String title;
     private RatingEnum rating;
+    private Double ranking;
 
-    public Movie(String title, RatingEnum rating){
+    public Movie(String title, RatingEnum rating, Double ranking){
         this.title = title;
         this.rating = rating;
+        this.ranking = ranking;
     }
 
     public String getTitle(){
@@ -24,8 +26,16 @@ public class Movie {
 
     }
 
+    public Double getRanking(){
+        return ranking;
+    }
+
+    public void setRanking(Double ranking){
+
+    }
+
     @Override
     public String toString(){
-        return "Movie: " + title +" rated " + rating;
+        return "Movie: " + title +" rated " + rating + " ranking " + ranking;
     }
 }
