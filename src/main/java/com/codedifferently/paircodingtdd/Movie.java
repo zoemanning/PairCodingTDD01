@@ -5,6 +5,7 @@ public class Movie {
     private RatingEnum rating;
     private Double ranking;
     private Integer length;
+
     public Movie(String title, RatingEnum rating, Double ranking, Integer length){
         this.title = title;
         this.rating = rating;
@@ -28,6 +29,7 @@ public class Movie {
 
     }
 
+
     public Double getRanking(){
         return ranking;
     }
@@ -43,6 +45,8 @@ public class Movie {
     public void setLength(Integer length) {
         this.length = length;
     }
+
+
 
     @Override
     public String toString(){

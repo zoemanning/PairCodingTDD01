@@ -26,7 +26,7 @@ public class MovieTest {
     }
 
     @Test
-    public void getRating() {
+    public void getRatingTest () {
         Movie movie = new Movie("Home Alone", RatingEnum.R, 4.5, 180);
 
         RatingEnum expected = RatingEnum.R;
@@ -34,4 +34,38 @@ public class MovieTest {
 
         Assertions.assertEquals(expected, actual);
     }
+
+    @Test
+    public void getRankingTest () {
+        Movie movie = new Movie("Home Alone", RatingEnum.R, 4.5, 180);
+
+        Double expected = 4.5;
+        Double actual = movie.getRanking();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void  getLengthTest() {
+        Movie movie = new Movie("Home Alone", RatingEnum.R, 4.5, 180);
+
+        Integer expected = 180;
+        Integer actual = movie.getLength();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
+    public void setLengthTest() {
+        Movie movie = new Movie("Home Alone", RatingEnum.R, 4.5, 180);
+
+        Integer changeLength = 79;
+        Integer expected = changeLength;
+        movie.setLength(79);
+        Integer actual = movie.getLength();
+
+        Assertions.assertEquals(expected, actual);
+
+    }
+
 }
