@@ -7,10 +7,10 @@ public class MovieTest {
 
     @Test
     public void constructorTest01(){
-        Movie movie = new Movie("Home Alone");
+        Movie movie = new Movie("Home Alone",RatingEnum.R);
 
-        String expected = "Home Alone";
-        String actual = movie.getTitle();
+        String expected = "Movie: Home Alone rated R";
+        String actual = movie.toString();
 
         Assertions.assertEquals(expected,actual);
     }
