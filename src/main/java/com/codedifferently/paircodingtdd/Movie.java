@@ -17,7 +17,8 @@ public class Movie {
     public String getTitle(){
         return title;}
 
-    public void setTitle(String name){
+    public void setTitle(String title){
+        this.title = title;
 
     }
 
@@ -26,6 +27,7 @@ public class Movie {
     }
 
     public void setRating(RatingEnum rating){
+        this.rating = rating;
 
     }
 
@@ -35,6 +37,7 @@ public class Movie {
     }
 
     public void setRanking(Double ranking){
+        this.ranking = ranking;
 
     }
 
@@ -45,7 +48,6 @@ public class Movie {
     public void setLength(Integer length) {
         this.length = length;
     }
-
 
 
     @Override
