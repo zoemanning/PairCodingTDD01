@@ -4,11 +4,13 @@ public class Movie {
     private String title;
     private RatingEnum rating;
     private Double ranking;
-
-    public Movie(String title, RatingEnum rating, Double ranking){
+    private Integer length;
+    public Movie(String title, RatingEnum rating, Double ranking, Integer length){
         this.title = title;
         this.rating = rating;
         this.ranking = ranking;
+        this.length = length;
+
     }
 
     public String getTitle(){
@@ -34,8 +36,16 @@ public class Movie {
 
     }
 
+    public Integer getLength() {
+        return length;
+    }
+
+    public void setLength(Integer length) {
+        this.length = length;
+    }
+
     @Override
     public String toString(){
-        return "Movie: " + title +" rated " + rating + " ranking " + ranking;
+        return "Movie: " + title +" rated " + rating + " ranking " + ranking + " movie length " + length;
     }
 }
