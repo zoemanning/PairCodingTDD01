@@ -1,4 +1,6 @@
 # PairCodingTDD
 Teammates:
-*Zoe Manning - zoemanning
+
+* Zoe Manning - zoemanning
+* Dj Cottingham - Deej824
 
