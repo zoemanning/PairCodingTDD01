@@ -26,6 +26,17 @@ public class MovieTest {
     }
 
     @Test
+    public void setTitleTest() {
+        Movie movie = new Movie("Titanic", RatingEnum.R, 4.5, 180);
+
+        String expected = "Scarface";
+        movie.setTitle("Scarface");
+        String actual = movie.getTitle();
+
+        Assertions.assertEquals(expected, actual);
+    }
+
+    @Test
     public void getRatingTest () {
         Movie movie = new Movie("Home Alone", RatingEnum.R, 4.5, 180);
 
@@ -91,5 +102,7 @@ public class MovieTest {
         Assertions.assertEquals(expected, actual);
 
     }
+
+
 
 }
